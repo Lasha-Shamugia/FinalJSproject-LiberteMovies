@@ -4,7 +4,7 @@ Requirements
 
 **Make at least following API calls:** 
 
- - ✅ List of items 
+- List of items - ✅
 
  - ✅ Details of an item
  
