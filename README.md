@@ -1,4 +1,4 @@
-# FinalJSproject-LiberteMovies
+# FinalJSproject-Popular Movies
 
 Requirements
 
