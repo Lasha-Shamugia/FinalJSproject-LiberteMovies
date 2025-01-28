@@ -3,10 +3,16 @@
 Requirements
 
 Make at least following API calls:
- - [x] List of items 
- Details of an item
- Search for an item
- Pagination
+
+ - [x] List of items
+
+ - [x] Details of an item
+ 
+ - [x] Search for an item
+ 
+ - [x] Pagination
+
+ 
 DOM mainpulation, fetched data should be displayed on the pages:
  Create a page for list of items (This should include search and pagination)
  Create a page for details of an item
