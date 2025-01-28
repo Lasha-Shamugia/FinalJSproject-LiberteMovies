@@ -1,0 +1,153 @@
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .card {
+  background-color: #6d6c6c;
+  color: #ffffff;
+}
+
+body.dark-mode .btn {
+  background-color: #444;
+  color: #ffffff;
+}
+
+.page-number {
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+.page-number.active {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.card {
+  height: 450px;
+  margin: auto;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  font-size: 15px;
+}
+
+.card-img-top {
+  height: 340px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  height: 250px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #afafaf;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.rent-btn {
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  border: solid 1.8px rgb(78, 122, 129);
+  color: white;
+}
+
+.rating-circle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: solid 1.8px rgb(78, 122, 129);
+  background-color: #e3e3e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin: 10px 0;
+  overflow: hidden;
+}
+.cart-btn {
+  color: white;
+}
+.rating-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: height 0.3s ease-in-out;
+}
+#backToMoviesButton {
+  position: absolute;
+  top: 110px;
+  right: 10px;
+  z-index: 10;
+}
+
+#removeButton {
+  position: absolute;
+  top: 110px;
+  left: 10px;
+  z-index: 10;
+}
+
+.navbar-brand {
+  font-size: 250%;
+  font-family: "Zen Dots", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+#movies {
+  margin-top: 50px;
+}
+
+#paginationContainer {
+  font-family: "Zen Dots", serif;
+}
+
+
+@media (min-width: 1440px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .col-lg-1 {
+    flex: 0 0 calc(100% / 5);
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1439px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .col-md-1 {
+    flex: 0 0 calc(100% / 4);
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 819px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .col-sm-1 {
+    flex: 0 0 calc(100% / 2);
+    margin-bottom: 1rem;
+  }
+}

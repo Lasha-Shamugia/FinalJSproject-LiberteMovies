@@ -8,14 +8,16 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <style>
-    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-dark-subtle text-dark-emphasis">
       <div class="container-fluid">
-        <a class="navbar-brand">Popular Movies</a>
+        <a href="index.html" class="navbar-brand">Popular Movies</a>
         <form class="d-flex" role="search">
           <input
             class="form-control me-2"
@@ -26,9 +28,43 @@
           <button class="btn btn-outline-success me-2" type="submit">
             Search
           </button>
+          <button id="toggleDarkMode" class="btn btn-secondary" type="button">
+            Dark Mode
+          </button>
+          <button class="btn btn-info ms-2 cart-btn" type="button">
+            Rent (<span id="cart-count">0</span>)
+          </button>
         </form>
       </div>
     </nav>
-    
+
+    <div class="container my-5">
+      <div id="movies" class="row g-4"></div>
+      <div
+        id="paginationContainer"
+        class="d-flex justify-content-center mt-5 align-items-center"
+      >
+        <button id="prevBtn" class="btn btn btn-dark me-2" disabled>
+          Previous
+        </button>
+        <div id="pagination" class="d-flex"></div>
+        <button id="nextBtn" class="btn btn btn-dark ms-2">Next</button>
+      </div>
+    </div>
+
+    <button
+      id="backToMoviesButton"
+      class="btn btn-secondary"
+      style="display: none"
+    >
+      Back to Home
+    </button>
+
+    <button id="removeButton" class="btn btn-danger" style="display: none">
+      Remove Selected Movies
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>
