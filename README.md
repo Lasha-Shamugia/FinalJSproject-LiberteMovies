@@ -1,4 +1,4 @@
-# FinalJSproject-Popular Movies
+# Final JS project - Popular Movies
 
 Requirements
 
